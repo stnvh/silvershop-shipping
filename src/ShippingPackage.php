@@ -3,11 +3,14 @@
 namespace SilverShop\Shipping;
 
 use SilverStripe\Core\Injector\Injectable;
+use \AllowDynamicProperties;
 
 /**
  * Encapsulation of shipping package data
  *
  */
+
+#[AllowDynamicProperties]
 class ShippingPackage
 {
     use Injectable;
